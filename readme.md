@@ -6,12 +6,13 @@ This is a simple Branch / ATM locator for Chase Bank.
 - It queries Chase's API for locations based on latitude and longitude coordinates
 - The coordinates are
 
-As of EOD 1/26/15:
+As of 5pm 1/27/2015:
 - AJAX call is successful for latest version of Chrome
 - Location "labels" or name of branches are appended to HTML file / view
+- Incorporate Google Maps API
+- Locate ATM Branches as markers on Google Map
 
 To finish:
 - Testing in other web browsers
-- Incoporate Google Maps API in order to geo-locate locations on embedded map
 - General UI updates and make it look pretty
-- Separation of concerns
+- Separation of concerns - Javascript and CSS files
