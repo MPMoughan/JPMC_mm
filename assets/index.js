@@ -5,20 +5,20 @@ function locateBranch (arr, map) {
 
     // google maps lat/long object created
     var marker = new google.maps.Marker({
-          position: arr[i],
+          position: arr[i].location,
           title:"ATM Location"
     });
     marker.setMap(map);
 
     // build contentString that gets placed into the window
 
-    // var infowindow = new google.maps.InfoWindow({
-    //   content: contentString
-    // });
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
 
-    // google.maps.event.addListener(marker, 'click', function() {
-    //   infowindow.open(map,marker);
-    // });
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map,marker);
+    });
   }
 }
 
