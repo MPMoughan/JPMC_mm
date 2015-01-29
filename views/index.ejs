@@ -18,36 +18,48 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<style type="text/css">
-      #map-canvas { height: 700px; width: 850px; margin: 0; padding: 0; margin: auto; }
-
-      h1, small {
+<style>
+      h1, h5 {
         text-align: center;
       }
-      button {
+      .outer {
         margin: auto;
+        width: 100%;
       }
-      .buttonContainer {
+      .inner {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #map-canvas {
+        height: 700px;
+        width: 850px;
+        margin: 0;
+        padding: 0;
         margin: auto;
-      }
+      };
 </style>
 
 </head>
 
+
 <!-- HTML -->
 
-<body onload="javascript:getLocation()">
-<div>
 
-  <h1>JPMC ATM & Branch Locator</h1>
-    <div class="buttonContainer">
-    <small>Please Note: You must allow your browser to access your location in order to find nearest locations for you!</small>
-    <br>
+
+<body onload="javascript:getLocation()">
+<div class="outer">
+
+  <h1>Chase ATM & Branch Locator</h1>
+    <h5>By: Matthew Moughan</h5>
+    <h5><a href="https://github.com/MPMoughan/JPMC_mm" target="_blank">Check it out on Github!</a></h5>
+    <div class="inner">
+    <p>** Please Note: You must allow your browser to access your location in order to find nearest locations for you! **</p>
     <br>
 
     <button id="button1" class="btn btn-primary" >Click here to find nearest locations</button>
-  </div>
-  <hr>
+    </div>
+    <hr>
   <div id="map-canvas"></div>
 
 </div>
