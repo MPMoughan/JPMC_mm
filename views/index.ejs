@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Chase Locator - MM</title>
 
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYcyLME9eZ4pOaCETr2DnmJUHZzcRqsFg"></script>
@@ -55,9 +55,15 @@
     <h5><a href="https://github.com/MPMoughan/JPMC_mm" target="_blank">Check it out on Github!</a></h5>
     <div class="inner">
     <p>** Please Note: You must allow your browser to access your location in order to find nearest locations for you! **</p>
+
+
     <br>
 
     <button id="button1" class="btn btn-primary" >Click here to find nearest locations</button>
+    <br>
+    <br>
+    <p>Click on a marker for more information about the specific branch!</p>
+
     </div>
     <hr>
   <div id="map-canvas"></div>
@@ -138,7 +144,7 @@ function getLocation() {
 function successCallback(position) {
       var myLatlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
       var mapOptions = {
-        zoom: 16,
+        zoom: 15,
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
